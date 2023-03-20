@@ -10,9 +10,9 @@ const Footer = () => {
                 </div>
                 <div className="py-5 flex flex-col">
                     <h3 className="py-3 text-xl">Личный кабинет:</h3>
-                        <p><a href="#">Войти</a></p>
-                        <p><a href="#">Регистрация</a></p>
-                        <p><a href="#">Забыли пароль?</a></p>
+                        <p>Войти</p>
+                        <p>Регистрация</p>
+                        <p>Забыли пароль?</p>
                 </div>
                
             </div>

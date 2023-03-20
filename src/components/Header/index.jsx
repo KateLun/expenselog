@@ -13,9 +13,9 @@ const Header = () => {
                 <nav id="nav-computer" className={style.nav_computer}> 
                     <div className="text-amber-600 font-bold text-2xl">EXPENCE LOG</div>
                     <div className="flex flex-row gap-5 mx-4">
-                        <a href="#">О нас</a>
-                        <a href="#">Ваши расходы</a>
-                        <a href="#">Контакты</a>
+                        <p>О нас</p>
+                        <p>Ваши расходы</p>
+                        <p>Контакты</p>
                     </div>
                     <button onClick={() => setOpen(!open) } className="flex gap-1 right-6">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -26,9 +26,9 @@ const Header = () => {
                     {open 
                     ?   <div className="absolute right-0 top-16 bg-emerald-800 text-orange-50  block py-3 gap-y-2 px-4 w-100 transition:left 1s;">
                             <ul>
-                                <li><a href="#">Войти</a></li>
-                                <li><a href="#">Регистрация</a></li>
-                                <li><a href="#">Забыли пароль?</a></li>
+                                <li>Войти</li>
+                                <li>Регистрация</li>
+                                <li>Забыли пароль?</li>
                             </ul>
                         </div>
                     : null}
@@ -37,12 +37,12 @@ const Header = () => {
                 <nav id="nav-mobile" className={style.blok_navmob}>
                     <div className="text-amber-600 font-bold text-2xl">EXPENCE LOG</div>
                     <div className={ nav ? [style.nav_mobile, style.active].join(' ') : style.nav_mobile}>
-                        <a href="#" className={style.nav_a}>О нас</a>
-                        <a href="#" className={style.nav_a}>Ваши расходы</a>
-                        <a href="#" className={style.nav_a}>Контакты</a>
-                        <a href="#" className={style.nav_a}>Войти</a>
-                        <a href="#" className={style.nav_a}>Регистрация</a>
-                        <a href="#" className={style.nav_a}>Забыли пароль?</a>
+                        <p className={style.nav_a}>О нас</p>
+                        <p className={style.nav_a}>Ваши расходы</p>
+                        <p className={style.nav_a}>Контакты</p>
+                        <p className={style.nav_a}>Войти</p>
+                        <p className={style.nav_a}>Регистрация</p>
+                        <p className={style.nav_a}>Забыли пароль?</p>
                     </div>
                     <div onClick={() => setNav(!nav) } className={style.mobile_btn}>
                         {nav 
