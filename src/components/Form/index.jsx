@@ -15,7 +15,6 @@ const Form = ( { addExpense } ) => {
     const handleClick = event => {
         event.preventDefault()
         
-        if (category, selectedDate, cost) {
         const expense = {
             category,
             data: selectedDate,
@@ -28,7 +27,6 @@ const Form = ( { addExpense } ) => {
         setSelectedDate(null)
         //const expensesJson = JSON.stringify(expenses)
         //localStorage.setItem('expenses', expensesJson) 
-    }
     }
 
         return (
