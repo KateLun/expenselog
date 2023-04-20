@@ -110,7 +110,7 @@ const App = () => {
         if (category === "Все расходы") {
             setFiltered(expenses)
         } else {
-            let newExpenses = [...expenses].filter( expense => expense.category )
+            let newExpenses = [...expenses].filter(expense => expense.category === category)
             setFiltered(newExpenses)
         }
         return filtered
